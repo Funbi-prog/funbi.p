@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Funbi Akintade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="project.html"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/outline/index.js"></script>
+    <style>
+        /* Your existing styles */
+        @keyframes magic3d {
+            0% {
+                opacity: 0;
+                transform: perspective(600px) rotateX(0deg) translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: perspective(600px) rotateX(0deg) translateY(0);
+            }
+        }
+
+        .fade-in.visible {
+            animation: magic3d 0.8s ease-out forwards;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        section {
+            margin-top: 120px;
+            padding: 50px 10%;
+            text-align: left;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            padding: 16px 40px;
+            z-index: 20;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header img {
+            height: 8rem;
+            z-index: 21;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .navbar-left a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-left a:hover {
+            color: #f30f48;
+        }
+
+        .navbar-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .navbar-right a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-right a:hover {
+            color: #f30f48;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin-top: 60px;
+            height: 80px;
+        }
+
+        footer .footer-logo {
+            height: 50px;
+        }
+
+        footer .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #38bdf8;
+        }
+
+        footer .footer-text {
+            font-size: 1rem;
+            max-width: 600px;
+            color: #d1d5db;
+        }
+
+        footer .footer-text a {
+            color: #38bdf8;
+        }
+
+        footer .footer-text a:hover {
+            color: #f30f48;
+        }
+
+        #skills {
+            background-color: #f30f48;
+            color: white;
+            padding: 50px 5%;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            width: 90%;
+            max-width: 1200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 2rem;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #38bdf8;
+        }
+
+        .left-aligned-section {
+            text-align: left;
+            max-width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <header class="flex justify-between items-center">
+        <div class="navbar-left">
+          <img src="img/Black And White Minimalist Typography Personal Logo (1).png" alt="Logo"  style="height: 5rem;">
+        </div>
+        <div class="navbar-right">
+          <nav>
+            <ul class="flex space-x-6">
+              <li><a href="Port.html" class="hover:text-[#f30f48]">Home</a></li>
+              <li><a href="about.html" class="hover:text-[#f30f48]">Skills</a></li>
+              <li><a href="skill.html" class="hover:text-[#f30f48]">Projects</a></li>
+              <li><a href="contact.html" class="hover:text-[#f30f48]">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hamburger lg:hidden" onclick="toggleSidebar()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </header>
+</body>
+<footer
+style="background-color: black; color: white; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 200px;">
+<div class="footer-text" style="margin-bottom: 20px;">
+    <p>&copy; 2025 Funbi Akintade. All rights reserved.</p>
+    <p>Phone: +234-702-5511-392 | Email: <a href="mailto:Ayipexfunby@gmail.com"
+            style="color: #f30f48;">Ayipexfunby@gmail.com</a></p>
+</div>
+<div class="social-icons" style="display: flex; gap: 15px;">
+    <a href="https://www.linkedin.com/in/funbi-akintade-59a4ba237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+        target="_blank">
+        <img src="https://img.icons8.com/ios-filled/40/ffffff/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://www.instagram.com/oluwafunbilayorr?igsh=cGlwNGt1OXl4YmEz&utm_source=qr" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/40/ffffff/instagram-new.png" alt="Instagram" />
+    </a>
+    <a href="mailto:Ayipexfunby@gmail.com">
+        <img src="https://img.icons8.com/ios-filled/40/ffffff/email.png" alt="Email" />
+    </a>
+</div>
+</footer>
+</html>
